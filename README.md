@@ -15,7 +15,7 @@ Packets injected successfully
 
 I am trying to test a suricata instance running on interface bond0 on a debian OS base. The test is conducted by injecting packets into bond0 that match criteria set by the user. The criteria are accepted as command line arguments in the format of:
 
--f <file to inject>   
+-f \<file to inject\>   
 -srcip <ip>   
 -dstip <ip>   
 -srcport <port>   
