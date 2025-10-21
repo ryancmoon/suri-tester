@@ -4,6 +4,13 @@ A perfectly adequate packet injecting program to test suricata artifact carving 
 
 I generated this with AI then touched it up in about 15 minutes, ymmv. 
 
+## Usage example
+
+$ sudo go run suri-tester.go -f /etc/hosts -srcip 10.0.0.1 -srcport 10001 -dstip 10.0.0.2 -dstport 443 -url http://specialsauces.com/test.txt -i lo
+go: downloading github.com/google/gopacket v1.1.19
+Packets injected successfully
+
+
 ## Prompt
 
 I am trying to test a suricata instance running on interface bond0 on a debian OS base. The test is conducted by injecting packets into bond0 that match criteria set by the user. The criteria are accepted as command line arguments in the format of:
