@@ -16,12 +16,12 @@ Packets injected successfully
 I am trying to test a suricata instance running on interface bond0 on a debian OS base. The test is conducted by injecting packets into bond0 that match criteria set by the user. The criteria are accepted as command line arguments in the format of:
 
 -f \<file to inject\>   
--srcip <ip>   
--dstip <ip>   
--srcport <port>   
--dstport <port>   
--url <text>   
--i <interface to inject the packets onto>  
+-srcip \<ip\>   
+-dstip \<ip\>   
+-srcport \<port\>   
+-dstport \<port\>   
+-url \<text\>   
+-i \<interface to inject the packets onto\>  
 
 Please write a Golang program that runs on debian OS as an executable that takes these arguments, checks if the referenced file exists, reads it and injects packets onto the referenced interface as an HTTP RFC2616 formatted packet stream appearing to come from the srcip:srcport to the dstip:dstport with full simulated three way hand shake and relevant push and fin packets. 
 
