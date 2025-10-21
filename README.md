@@ -6,7 +6,7 @@ I generated this with AI then touched it up in about 15 minutes, ymmv.
 
 ## Usage example
 
-$ sudo go run suri-tester.go -f /etc/hosts -srcip 10.0.0.1 -srcport 10001 -dstip 10.0.0.2 -dstport 443 -url http://specialsauces.com/test.txt -i lo
+$ sudo go run suri-tester.go -f /etc/hosts -srcip 10.0.0.1 -srcport 10001 -dstip 10.0.0.2 -dstport 443 -url hXXp://specialsauces.com/test.txt -i lo
 go: downloading github.com/google/gopacket v1.1.19
 Packets injected successfully
 
